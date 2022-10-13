@@ -21,3 +21,13 @@ function titleCase(msg) {
 }
 
 titleCase(msg);
+
+// --------------Sum of all numbers in an array
+
+let arr = [13, 25, 78, 3, 1, 6, 8, 12, 4];
+
+function sumOfNum(arr) {
+  return arr.reduce((acc, crr) => acc + crr);
+}
+
+console.log(sumOfNum(arr));
