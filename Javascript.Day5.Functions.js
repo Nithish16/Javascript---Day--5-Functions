@@ -31,3 +31,17 @@ function sumOfNum(arr) {
 }
 
 console.log(sumOfNum(arr));
+
+// -----------------Return all the prime numbers in an array
+
+let findPrimeNum = function isPrime(n) {
+  if (n < 2) return `${n} is not a Prime Number`;
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return `${n} is not a Prime Number`;
+    }
+  }
+  return `${n} is a Prime Number`;
+};
+console.log(findPrimeNum(117));
+
