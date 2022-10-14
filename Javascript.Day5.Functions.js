@@ -1,4 +1,4 @@
-// ---------------Print odd numbers in an array
+// ---------------Print odd numbers in an array------------------------------------
 
 let inputData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sortOddNumbers = (numbers) => {
@@ -7,7 +7,7 @@ let sortOddNumbers = (numbers) => {
 };
 console.log(sortOddNumbers(inputData));
 
-// ------------Convert all the strings to title caps in a string array
+// ------------Convert all the strings to title caps in a string array--------------
 
 let msg = "Convert all the strings to title caps in a string array";
 
@@ -22,7 +22,7 @@ function titleCase(msg) {
 
 titleCase(msg);
 
-// --------------Sum of all numbers in an array
+// --------------Sum of all numbers in an array--------------------------------------
 
 let arr = [13, 25, 78, 3, 1, 6, 8, 12, 4];
 
@@ -32,7 +32,7 @@ function sumOfNum(arr) {
 
 console.log(sumOfNum(arr));
 
-// -----------------Return all the prime numbers in an array
+// -----------------Return all the prime numbers in an array-------------------------
 
 let findPrimeNum = function isPrime(n) {
   if (n < 2) return `${n} is not a Prime Number`;
@@ -44,4 +44,16 @@ let findPrimeNum = function isPrime(n) {
   return `${n} is a Prime Number`;
 };
 console.log(findPrimeNum(117));
+
+// ------------------- Return all the prime numbers in an array-----------------------
+
+let checkPalin = function palindrome(input) {
+  let reveresePalin = input.split("").reverse().join("");
+  if (reveresePalin === input) {
+    return `${input} is a palindrome`;
+  } else {
+    return `${input} is not a palindrome`;
+  }
+};
+console.log(checkPalin("racecar"));
 
