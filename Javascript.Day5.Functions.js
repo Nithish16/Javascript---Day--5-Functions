@@ -57,7 +57,7 @@ let checkPalin = function palindrome(input) {
 };
 console.log(checkPalin("racecar"));
 
-//-------------------Remove duplicates from an array
+//-------------------Remove duplicates from an array---------------------------------
 
 let arr = [1, 2, 3, 4, 2, 3, 6, 7, 9, 6, 9];
 let obj = {};
@@ -68,4 +68,19 @@ for (let i of arr) {
 let b = Object.keys(obj);
 
 console.log(b);
+
+//---------------------Rotate an array by k times-----------------------------------
+
+const num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const k = 10;
+
+function arrRotation(arr, numOfRotation) {
+  for (let i = 0; i < numOfRotation; i++) {
+    arr.unshift(arr.pop());
+    console.log(`step${i + 1}:`, arr);
+  }
+}
+
+arrRotation(num, k);
+
 
