@@ -57,3 +57,15 @@ let checkPalin = function palindrome(input) {
 };
 console.log(checkPalin("racecar"));
 
+//-------------------Remove duplicates from an array
+
+let arr = [1, 2, 3, 4, 2, 3, 6, 7, 9, 6, 9];
+let obj = {};
+
+for (let i of arr) {
+  obj[i] = true;
+}
+let b = Object.keys(obj);
+
+console.log(b);
+
